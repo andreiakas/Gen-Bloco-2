@@ -22,7 +22,7 @@ public class Categoria {
 	
 	private String classificacao;
 	
-	private int idade;
+	private String idade;
 	
 	@OneToMany(mappedBy = "categoria", cascade = CascadeType.ALL)
 	@JsonIgnoreProperties("categoria")
@@ -44,11 +44,11 @@ public class Categoria {
 		this.classificacao = classificacao;
 	}
 
-	public int getIdade() {
+	public String getIdade() {
 		return idade;
 	}
 
-	public void setIdade(int idade) {
+	public void setIdade(String idade) {
 		this.idade = idade;
 	}
 	
